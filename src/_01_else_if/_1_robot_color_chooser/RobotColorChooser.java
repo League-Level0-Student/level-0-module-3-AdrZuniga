@@ -2,11 +2,23 @@
 package _01_else_if._1_robot_color_chooser;
 
 import javax.swing.JOptionPane;
+
+import org.jointheleague.graphical.robot.Robot;
+
 import java.awt.Color;
 
 public class RobotColorChooser {
 	public static void main(String[] args) {
 		
+		
+	Robot r = new Robot();
+		
+	r.setPenWidth(10);
+	
+	String colors = JOptionPane.showInputDialog("What color would you like?");
+		
+	if(colors == red)
+	
 		//1. Create a new Robot
 	    //2. Make the robot draw a shape (this will take more than one line of code)		
 		//3. Set the pen width to 10
