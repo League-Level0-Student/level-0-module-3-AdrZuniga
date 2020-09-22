@@ -17,7 +17,35 @@ public class RobotColorChooser {
 	
 	String colors = JOptionPane.showInputDialog("What color would you like?");
 		
-	if(colors == red)
+	
+	r.setSpeed(15);
+	r.move(30);
+	r.turn(90);
+	r.move(30);
+	r.turn(90);
+	r.move(42);
+	r.turn(90);
+	r.move(42);
+	r.turn(90);
+	r.move(42);
+	
+	
+	
+	if(colors.equals("red")) {
+		r.setPenColor(Color.red);
+	}if(colors.equals("blue")) {
+		r.setPenColor(Color.blue);
+	}if(colors.equals("yellow")) {
+		r.setPenColor(Color.yellow);
+	}if(colors.equals("green")) {
+		r.setPenColor(Color.green);
+	}if(colors.equals("pink")) {
+		r.setPenColor(Color.pink);
+	}if(colors.equals("orange")) {
+		r.setPenColor(Color.orange);
+	}else {
+		r.setRandomPenColor();
+	}
 	
 		//1. Create a new Robot
 	    //2. Make the robot draw a shape (this will take more than one line of code)		
