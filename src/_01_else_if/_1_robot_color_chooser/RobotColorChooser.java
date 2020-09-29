@@ -12,40 +12,65 @@ public class RobotColorChooser {
 		
 		
 	Robot r = new Robot();
-		
+	r.penDown();
 	r.setPenWidth(10);
 	
 	String colors = JOptionPane.showInputDialog("What color would you like?");
 		
+	int number=5;
 	
-	r.setSpeed(15);
-	r.move(30);
-	r.turn(90);
-	r.move(30);
-	r.turn(90);
-	r.move(42);
-	r.turn(90);
-	r.move(42);
-	r.turn(90);
-	r.move(42);
-	
+	if(number == 5) {
+		JOptionPane.showMessageDialog(null, "its five");
+	}
+	else if(number < 4) {
+		JOptionPane.showMessageDialog(null, "its less than four");
+
+	}else {
+		JOptionPane.showMessageDialog(null, "its four or a greater number");
+
+	}
 	
 	
 	if(colors.equals("red")) {
+		System.out.println("Testing");
 		r.setPenColor(Color.red);
-	}if(colors.equals("blue")) {
+	}
+	else if(colors.equals("blue")) {
 		r.setPenColor(Color.blue);
-	}if(colors.equals("yellow")) {
+	}
+	else if(colors.equals("yellow")) {
 		r.setPenColor(Color.yellow);
-	}if(colors.equals("green")) {
+	}
+	else if(colors.equals("green")) {
 		r.setPenColor(Color.green);
-	}if(colors.equals("pink")) {
+	}
+	else if(colors.equals("pink")) {
 		r.setPenColor(Color.pink);
-	}if(colors.equals("orange")) {
+	}
+	else if(colors.equals("orange")) {
 		r.setPenColor(Color.orange);
-	}else {
+	}
+	else {
 		r.setRandomPenColor();
 	}
+	r.setSpeed(15);
+	r.move(60);
+	r.turn(90);
+	r.move(60);
+	r.turn(90);
+	r.move(67);
+	r.turn(90);
+	r.move(67);
+	r.turn(90);
+	r.move(67);
+	r.turn(90);
+	r.move(71);
+	r.turn(90);
+	r.move(71);
+	r.turn(90);
+	r.move(71);
+	r.turn(90);
+	r.move(71);
 	
 		//1. Create a new Robot
 	    //2. Make the robot draw a shape (this will take more than one line of code)		
