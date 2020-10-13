@@ -15,7 +15,12 @@ public class CrazyCatLady {
 			JOptionPane.showMessageDialog(null, "your a crazy cat lady/man");
 		}
 		
-		if 
+		else if(nCats < 3 && nCats > 0) {
+			JOptionPane.showMessageDialog(null, "your normal");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "your not a cat person");
+		}
 			
 		
 		
