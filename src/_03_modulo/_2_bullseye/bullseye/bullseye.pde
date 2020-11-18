@@ -10,18 +10,18 @@ void draw() {
  int h=110;
   for(int i = 0; i<24; i++){
     if( w % 2 == 0){
-      Color(red); 
+      fill(#C12525); 
     } else {
-      Color(blue);
+      fill(#8B0F1A);
     }
       
 
 //ellipse(200,160,110,110);
 //ellipse(200,160,85,85);
-// ellipse(200,160,50,50);
+//ellipse(200,160,50,50);
  ellipse(200,160,w,h);
  
- w = w - 5;
+ w = w -5;
 h = h -5;
  
  
