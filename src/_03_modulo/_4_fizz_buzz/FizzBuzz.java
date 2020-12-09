@@ -21,16 +21,17 @@ package _03_modulo._4_fizz_buzz;
 
 public class FizzBuzz {
 	public static void main(String[] args) {
-		for (int i = 1; i < 20; i++) {
+		for (int i = 1; i <= 20; i++) {
 
-			// and -> && if( i% 1 == 0 && i %78 ==0)
-
-			if (i % 3 == 0) {
-				System.out.print("fizz");
+			// and -> && if( i% 1 == 0 && i %78 ==
+			if (i % 3 == 0 && i % 5 == 0) {
+				System.out.println("fizz buzz");
+		
+				
 			} else if (i % 5 == 0) {
-				System.out.print("buzz");
-			} else if (i % 3 == 0 && i % 5 == 0) {
-				System.out.print("fizz buzz");
+				System.out.println("buzz");
+			} else if( i % 3 == 0 ){
+			System.out.println("fizz");
 			}
 			else {
 				System.out.println(i);
@@ -38,22 +39,23 @@ public class FizzBuzz {
 
 			// for(int i = 0; i < 4; i++)
 
-			if (i % 1 == 0) {
-				System.out.print("fizz");
-			}
+			//if (i % 1 == 0) {
+				//System.out.print("fizz");
+			//}
 
-			if (i % 4 == 0) {
-				System.out.print("buzz fizz");
-			}
-			if (i % 7 == 0) {
-				System.out.print("fizz buzz");
-			}
-			if (i % 11 == 0) {
-				System.out.print("fizz");
+			//if (i % 4 == 0) {
+				//System.out.print("buzz fizz");
+			//}
+			//if (i % 7 == 0) {
+				//System.out.print("fizz buzz");
+			//}
+			//if (i % 11 == 0) {
+				//System.out.print("fizz");
+				
 			}
 
 		}
 
 	}
 
-}
+
